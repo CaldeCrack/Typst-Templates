@@ -45,6 +45,8 @@
 }
 
 /* Usage
+#import "path/generic_template.typ": *
+
 #show: project.with(
   title: "title",
   authors: ("First Member", "Second Member"),
