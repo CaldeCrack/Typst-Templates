@@ -8,7 +8,7 @@
       columns: (for i in range(columns) {(percentage, )}),
       align: center,
       ..for i in range(values.len()) {
-        values.at(i).map(str)
+        values.at(i).map(n => if type(n) == int {str(n)} else {n})
       }
     )
   ]
