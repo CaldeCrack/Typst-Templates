@@ -45,7 +45,7 @@
 }
 
 /* Usage
-#import "path/generic_template.typ": *
+#import "<path>/template.typ": *
 
 #show: project.with(
   title: "title",
