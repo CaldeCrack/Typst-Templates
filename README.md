@@ -1,2 +1,2 @@
 # Typst-Templates
-Typst templates for various purposes
+Typst personal templates for various purposes
