@@ -45,3 +45,12 @@
 
   body
 }
+
+/* Usage
+#import "<path>/template.typ": *
+#show: project.with(
+  title: "title",
+  authors: ("First Member", "Second Member"),
+  date: "September 16, 2023",
+)
+*/
