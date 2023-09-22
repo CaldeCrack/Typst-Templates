@@ -27,7 +27,7 @@
   place(
     top + right,
     figure(
-      image("../img/dcc.png", width: 22%),
+      image("LogosFCFM/Ciencias de la Computación/Logos Departamento/dcc_2019_cuadrado_blanco.png", width: 22%),
     ),
     dy: -0.9%,
   )
