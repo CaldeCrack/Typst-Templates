@@ -1,5 +1,5 @@
 // Generic Typst template for university projects
-#let project(title: "", authors: (), date: none, prof: "", body) = {
+#let project(title: "", authors: (), date: none, prof: "", signature: "", body) = {
   // Document's basic properties
   set document(author: authors, title: title)
   set page(
@@ -18,7 +18,7 @@
   // Sub header
   align(left)[
     #v(-2.4em)
-    *CC5213-1 Recuperación de Información Multimedia* \
+    *#signature* \
     *Prof. de Cátedra:* #prof \
     *Estudiante:* #authors.join(", ")
   ]
