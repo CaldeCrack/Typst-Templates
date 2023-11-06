@@ -20,15 +20,15 @@
     #v(-2.4em)
     *#signature* \
     *Prof. de Cátedra:* #prof \
-    *Estudiante:* #authors.join(", ")
+    *#if authors.len() > 1 {
+      "Estudiantes:"
+    } else {"Estudiante:"}* #authors.join(", ")
   ]
 
   // Logo
   place(
     top + right,
-    figure(
-      image("LogosFCFM/Ciencias de la Computación/Logos Departamento/dcc_2019_cuadrado_blanco.png", width: 22%),
-    ),
+    image("LogosFCFM/Ciencias de la Computación/Logos Departamento/dcc_2019_cuadrado_blanco.png", width: 22%),
     dy: -0.9%,
   )
 
