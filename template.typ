@@ -1,4 +1,14 @@
 // Generic Typst template for university projects
+
+/* Usage
+#import "<path>/template.typ": *
+#show: project.with(
+  title: "title",
+  authors: ("First Member", "Second Member"),
+  date: "September 16, 2023",
+  prof: "Professor",
+  signature: "Course")
+*/
 #let project(title: "", authors: (), date: none, prof: "", signature: "", body) = {
   // Document's basic properties
   set document(author: authors, title: title)
@@ -45,12 +55,3 @@
 
   body
 }
-
-/* Usage
-#import "<path>/template.typ": *
-#show: project.with(
-  title: "title",
-  authors: ("First Member", "Second Member"),
-  date: "September 16, 2023",
-)
-*/
