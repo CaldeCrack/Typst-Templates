@@ -6,12 +6,13 @@
   title: "title",
   subtitle: "subtitle",
   author: ("First Member", "Second Member"),
-  prof: ("Professor", )
-  aux: ("Auxiliar", )
-  signature: "Course"
+  prof: ("Professor", ),
+  aux: ("Auxiliar", ),
+  signature: "Course",
+  numbering: "a.1."
 */
 // Generic Typst template for university projects
-#let project(title: "", subtitle: "", author: (), prof: (), aux: (), signature: "", font: "Linux Libertine", body) = {
+#let project(title: "", subtitle: "", author: (), prof: (), aux: (), signature: "", numbering: "1.1.", font: "Linux Libertine", body) = {
   // Document's basic properties
   set document(author: author, title: title)
   set page(
@@ -39,7 +40,7 @@
     #v(-2.4em)
     *#signature* \
     *#prof_text:* #prof.join(", ", last: " y ") \
-    *#aux_text:* #aux.join(", ", last: " y ") \
+    #if aux.len() > 0 [*#aux_text:* #aux.join(", ", last: " y ") #linebreak()]
     *#student_text:* #author.join(", ", last: " y ")
   ]
 
@@ -60,6 +61,7 @@
 
   // Main body
   set heading(numbering: "P1.1.")
+  set enum(numbering: numbering)
 
   set par(justify: true)
 
