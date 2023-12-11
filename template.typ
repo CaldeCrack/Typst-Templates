@@ -59,6 +59,8 @@
   ]
 
   // Main body
+  set heading(numbering: "P1.1")
+
   set par(justify: true)
 
   body
