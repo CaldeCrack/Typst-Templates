@@ -12,7 +12,7 @@
   numbering: "a.1."
 */
 // Generic Typst template for university projects
-#let project(title: "", subtitle: "", author: (), prof: (), aux: (), signature: "", numbering: "1.1.", font: "Linux Libertine", body) = {
+#let project(title: "", subtitle: "", author: (), prof: (), aux: (), signature: "", numbering: "1.1.", font: "Libertinus Serif", body) = {
   // Document's basic properties
   set document(author: author, title: title)
   set page(
